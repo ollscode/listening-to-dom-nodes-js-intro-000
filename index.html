@@ -66,7 +66,7 @@ function bubble(e) {
   // remember all of those fancy DOM node properties?
   // we're making use of them to get the number
   // in each div here!
- 
+
   // if `this` is a bit confusing, don't worry —
   // for now, know that it refers to the div that
   // is triggering the current event handler.
@@ -83,7 +83,7 @@ for (let i = 0; i < divs.length; i++) {
   // set the third argument to `true`!
   divs[i].addEventListener('click', capture, true);
 }
-// You can read more about bubbling and capture 
+// You can read more about bubbling and capture
 // https://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
 // https://www.quirksmode.org/js/events_order.html
 
@@ -92,7 +92,7 @@ const divs = document.querySelectorAll('div');
 function bubble(e) {
   // stop! that! propagation!
   e.stopPropagation();
- 
+
   console.log(this.firstChild.nodeValue.trim() + ' bubbled');
 }
 for (let i = 0; i < divs.length; i++) {
